@@ -1,11 +1,18 @@
 <?php
     include_once 'produto.php';
 
-    $valor = new Produto();
+    $produto1 = new Produto();
+    $produto2 = new Produto();
 
-    $valor->Codigo=4011;
+    $produto1->Codigo=4011;
+    $produto1->Descricao = "CD Greatest Hits of RHCP";
+    
+    $produto2->Codigo=4012;
+    $produto2->Descricao = "CD Greatest Hits of SOAD";
 
-    $valor->Descricao = "CD Greatest Hits of RHCP";
+    $produto1->ImprimeEtiqueta();
+    $produto2->ImprimeEtiqueta();
 
-    echo $valor->Codigo . "-" . $valor->Descricao;
+    // html forms
+    
 ?>
